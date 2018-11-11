@@ -12,7 +12,7 @@ namespace TemplateWorldSpeakers.Domain.Tests
         }
 
         [Fact] //The [Fact] attribute indicates a test method that is run by the test runner
-        public void ShouldReturnCompleteEnglishTransationHelloSentanceGivenNameAde()
+        public void ShouldReturnCompleteEnglishTranslationHelloSentanceGivenNameAde()
         {
             //arrange
             var sut = new EnglishSpeakingHuman("Ade");
@@ -25,7 +25,7 @@ namespace TemplateWorldSpeakers.Domain.Tests
         }
 
         [Fact]
-        public void ShouldReturnCompleteSpanishTransationHelloSentanceGivenNameAde()
+        public void ShouldReturnCompleteSpanishTranslationHelloSentanceGivenNameAde()
         {
             //arrange
             var sut = new TemplateWorldSpeakers.Domain.SpanishSpeakingHuman("Ade");
