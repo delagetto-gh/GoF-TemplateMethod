@@ -23,5 +23,18 @@ namespace TemplateWorldSpeakers.Domain.Tests
             //assert
             Assert.Equal("Hello, my name is Ade!", result);
         }
+
+        [Fact]
+        public void ShouldReturnCompleteSpanishTransationHelloSentanceGivenNameAde()
+        {
+            //arrange
+            var sut = new TemplateWorldSpeakers.Domain.SpanishSpeakingHuman("Ade");
+
+            //act
+            var result = sut.Greet();
+
+            //assert
+            Assert.Equal("Hola, mi nombre es Ade!", result);
+        }
     }
 }
