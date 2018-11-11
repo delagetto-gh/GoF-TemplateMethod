@@ -15,7 +15,7 @@ namespace TemplateWorldSpeakers.Domain.Tests
         public void ShouldReturnCompleteEnglishTransationHelloSentanceGivenNameAde()
         {
             //arrange
-            var sut = new EnglishSpeakingHuman ("Ade");
+            var sut = new EnglishSpeakingHuman("Ade");
 
             //act
             var result = sut.Greet();

@@ -11,7 +11,7 @@ namespace TemplateWorldSpeakers.Domain
 
         public string Greet()
         {
-            return "";
+            return $"Hello, my name is {this.name}!";
         }
     }
 }
