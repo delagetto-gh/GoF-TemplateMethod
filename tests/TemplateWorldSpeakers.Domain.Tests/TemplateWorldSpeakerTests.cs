@@ -3,10 +3,10 @@ using Xunit;
 
 namespace TemplateWorldSpeakers.Domain.Tests
 {
-    public class UnitTest1
+    public class TemplateWorldSpeakerTests
     {
         [Fact]
-        public void Test1()
+        public void ShouldReturnCompleteEnglishTransationHelloSentanceGivenNameAde()
         {
 
         }
