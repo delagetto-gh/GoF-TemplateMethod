@@ -1,17 +1,13 @@
 namespace TemplateWorldSpeakers.Domain
 {
-    public class EnglishSpeakingHuman
+    public class EnglishSpeakingHuman : LanguageSpeakingHuman
     {
-        private string name;
+        public EnglishSpeakingHuman(string name) : base(name)
+        { }
 
-        public EnglishSpeakingHuman(string name)
+        protected override string PrepareNativeGreet()
         {
-            this.name = name;
-        }
-
-        public string Greet()
-        {
-            return $"Hello, my name is {this.name}!";
+            return "Hello, my name is";
         }
     }
 }

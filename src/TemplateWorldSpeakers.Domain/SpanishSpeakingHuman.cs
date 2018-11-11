@@ -2,18 +2,14 @@ using System;
 
 namespace TemplateWorldSpeakers.Domain
 {
-    public class SpanishSpeakingHuman
+    public class SpanishSpeakingHuman : LanguageSpeakingHuman
     {
-        private string name;
+        public SpanishSpeakingHuman(string name) : base(name)
+        { }
 
-        public SpanishSpeakingHuman(string name)
+        protected override string PrepareNativeGreet()
         {
-            this.name = name;
-        }
-
-        public string Greet()
-        {
-            return $"Hola, mi nombre es {this.name}!";
+            return "Hola, mi nombre es";
         }
     }
 }

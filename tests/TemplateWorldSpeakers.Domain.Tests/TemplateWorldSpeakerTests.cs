@@ -28,7 +28,7 @@ namespace TemplateWorldSpeakers.Domain.Tests
         public void ShouldReturnCompleteSpanishTranslationHelloSentanceGivenNameAde()
         {
             //arrange
-            var sut = new TemplateWorldSpeakers.Domain.SpanishSpeakingHuman("Ade");
+            var sut = new SpanishSpeakingHuman("Ade");
 
             //act
             var result = sut.Greet();
