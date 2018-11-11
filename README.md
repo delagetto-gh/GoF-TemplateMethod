@@ -32,6 +32,6 @@ Base
 ```cs 
 class LanguageSpeakingHuman.cs
 ``` 
-will do grunt work of preparing the full sentance, with their name... while *derived* **LanguageSpeakingHumans** will prepare the part of the sentance that is specific to it (what the base must delegate for).
+will do grunt work of preparing the full sentance, with their name... while *derived* **LanguageSpeakingHumans** will prepare the part of the sentance that is specific to it (what the base must delegate to the derived for).
 
 
